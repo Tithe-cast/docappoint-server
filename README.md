@@ -1,9 +1,8 @@
+
+**Live Link:** https://docappoint-server-dl42.onrender.com
+
 # DocAppoint Server – REST API
-
-Express.js + MongoDB backend for the DocAppoint Doctor Appointment Manager.
-
-DocAppoint is a modern doctor appointment booking platform built with React 18, Vite, and Tailwind CSS. Users can browse top-rated doctors, view detailed profiles, and book appointments seamlessly. The app features JWT-based secure authentication with Google OAuth support, a fully responsive design with dark/light theme toggle, and a personal dashboard where patients can manage their bookings and profile. Key highlights include a Swiper.js hero slider, real-time doctor search and sorting, instant booking management (update/delete without reload), a patient review system, and a custom 404 page — all powered by a clean, professional UI with smooth animations.
-
+DocAppoint API is a secure and scalable REST API built with Node.js, Express.js, and MongoDB (Mongoose). It handles user authentication using JWT tokens with bcrypt password hashing, full CRUD operations for appointments with owner-level authorization, doctor listings with search and sort support, and a patient review system that automatically updates doctor ratings. The API includes protected routes via JWT middleware, global error handling, CORS configuration for cross-origin requests, and a database seed script with 9 demo doctors across Dhaka hospitals.
 ## 📡 API Endpoints
 
 ### Auth
