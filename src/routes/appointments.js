@@ -6,7 +6,7 @@ import { verifyToken } from '../middleware/auth.js';
 const router = Router();
 
 
-// ── GET appointments by user email ────────────────────────
+// GET appointments by user email 
 router.get('/', verifyToken, async (req, res) => {
   try {
     const { email } = req.query;
@@ -25,7 +25,7 @@ router.get('/', verifyToken, async (req, res) => {
 });
 
 
-// ── POST create appointment ───────────────────────────────
+// POST create appointment 
 router.post('/', verifyToken, async (req, res) => {
   try {
     const data = req.body;
@@ -48,7 +48,7 @@ router.post('/', verifyToken, async (req, res) => {
 });
 
 
-// ── PATCH update appointment ──────────────────────────────
+//PATCH update appointment 
 router.patch('/:id', verifyToken, async (req, res) => {
   try {
     const appointment = await Appointment.findById(req.params.id);
@@ -74,7 +74,7 @@ router.patch('/:id', verifyToken, async (req, res) => {
 });
 
 
-// ── DELETE appointment ────────────────────────────────────
+// DELETE appointment 
 router.delete('/:id', verifyToken, async (req, res) => {
   try {
     const appointment = await Appointment.findById(req.params.id);
